@@ -21,21 +21,21 @@ Only the **owner** can upload new products, while regular users can view and pur
 ## 📸 Screenshots
 
 ### 🔐 Authentication
-![Login](assets/screenshots/login.png)
+![Login](assets/login.png)
 
 ### 🏠 Home / Products
-![Products](assets/screenshots/home.png)
+![Products](assets/home.png)
 
 ### 🛒 orders
-![Cart](assets/screenshots/orders.png)
+![Cart](assets/orders.png)
 
 ### 🔒 Firebase Rules Example
-![Rules](assets/screenshots/rules.png)
+![Rules](assets/rules.png)
 
 ---
 
 ## 🎥 Demo Video
-![demo](nightmarket.mp4)
+![demo](assets/night%20market%20.mp4)
 
 ---
 
