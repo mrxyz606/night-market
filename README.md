@@ -69,9 +69,14 @@ Clone the repo and run locally:
   flutter run
 
 ```
+
+
+
+### 📜 License
 ```markdown
 ## 📜 License
 This project is open-source and available under the [MIT License](LICENSE).  
+
 ```
 ## ✨ Author
 👩‍💻 Developed by **Malak Mansour**  
