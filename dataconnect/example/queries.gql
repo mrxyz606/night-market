@@ -1,0 +1,31 @@
+mutation CreateBusiness($data: Business_Data!) @auth(level: USER) {
+  business_insert(data: $data) {
+    id
+  }
+}
+
+query ListProductsByCategory($category: String!) @auth(level: PUBLIC) {
+  products(where: {category: {eq: $category}}) {
+    id
+    name
+    description
+    price
+    imageUrl
+  }
+}
+
+mutation UpdateProductStock($id: UUID!, $stockQuantity: Int!) @auth(level: USER) {
+  product_update(key: {id: $id}, data: {stockQuantity: $stockQuantity}) {
+    id
+  }
+}
+
+query ListReviewsForBusiness($businessId: UUID!) @auth(level: PUBLIC) {
+  reviews(where: {businessId: {eq: $businessId}}) {
+    id
+    customerId
+    rating
+    text
+    createdAt
+  }
+}

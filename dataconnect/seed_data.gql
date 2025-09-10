@@ -1,0 +1,118 @@
+mutation SeedData @auth(level: USER) {
+  user_upsertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440000",
+      address: "123 Main St",
+      displayName: "Bob User",
+      email: "bob@example.com",
+      passwordHash: "somehash",
+      phoneNumber: "555-1212",
+      role: "customer"
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440001",
+      address: "456 Elm St",
+      displayName: "Alice Admin",
+      email: "alice@example.com",
+      passwordHash: "anotherhash",
+      phoneNumber: "555-3434",
+      role: "admin"
+    }
+  ])
+  business_upsertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440002",
+      ownerId: "550e8400-e29b-41d4-a716-446655440000",
+      address: "789 Oak St",
+      description: "Bob's Burgers",
+      logoUrl: "http://example.com/bobsburgers.png",
+      name: "Bob's Burgers",
+      phoneNumber: "555-5656",
+      websiteUrl: "http://bobsburgers.example.com"
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440003",
+      ownerId: "550e8400-e29b-41d4-a716-446655440001",
+      address: "101 Pine St",
+      description: "Alice's Art Supplies",
+      logoUrl: "http://example.com/alicesart.png",
+      name: "Alice's Art Supplies",
+      phoneNumber: "555-7878",
+      websiteUrl: "http://alicesart.example.com"
+    }
+  ])
+  product_upsertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440004",
+      businessId: "550e8400-e29b-41d4-a716-446655440002",
+      category: "food",
+      description: "Delicious burger",
+      imageUrl: "http://example.com/burger.png",
+      name: "Burger",
+      price: 5.99,
+      stockQuantity: 100
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440005",
+      businessId: "550e8400-e29b-41d4-a716-446655440003",
+      category: "art",
+      description: "High quality paint",
+      imageUrl: "http://example.com/paint.png",
+      name: "Paint",
+      price: 10.99,
+      stockQuantity: 50
+    }
+  ])
+  order_upsertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440006",
+      customerId: "550e8400-e29b-41d4-a716-446655440000",
+      orderDate: "2024-01-29T12:00:00Z",
+      shippingAddress: "123 Main St",
+      status: "pending",
+      totalAmount: 5.99
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440007",
+      customerId: "550e8400-e29b-41d4-a716-446655440000",
+      orderDate: "2024-01-30T14:00:00Z",
+      shippingAddress: "123 Main St",
+      status: "complete",
+      totalAmount: 10.99
+    }
+  ])
+  orderItem_upsertMany(data: [
+    {
+      orderId: "550e8400-e29b-41d4-a716-446655440006",
+      productId: "550e8400-e29b-41d4-a716-446655440004",
+      priceAtTimeOfOrder: 5.99,
+      quantity: 1
+    },
+    {
+      orderId: "550e8400-e29b-41d4-a716-446655440007",
+      productId: "550e8400-e29b-41d4-a716-446655440005",
+      priceAtTimeOfOrder: 10.99,
+      quantity: 1
+    }
+  ])
+  review_upsertMany(data: [
+    {
+      id: "550e8400-e29b-41d4-a716-446655440008",
+      businessId: "550e8400-e29b-41d4-a716-446655440002",
+      customerId: "550e8400-e29b-41d4-a716-446655440000",
+      productId: "550e8400-e29b-41d4-a716-446655440004",
+      createdAt: "2024-01-29T13:00:00Z",
+      rating: 5,
+      text: "Best burger ever!"
+    },
+    {
+      id: "550e8400-e29b-41d4-a716-446655440009",
+      businessId: "550e8400-e29b-41d4-a716-446655440003",
+      customerId: "550e8400-e29b-41d4-a716-446655440001",
+      productId: "550e8400-e29b-41d4-a716-446655440005",
+      createdAt: "2024-01-30T15:00:00Z",
+      rating: 4,
+      text: "Great paint, but a bit pricey."
+    }
+  ])
+}

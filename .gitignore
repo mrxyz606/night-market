@@ -1,0 +1,12 @@
+# Flutter & Dart
+.dart_tool/
+.packages
+.pub/
+build/
+ios/Pods/
+android/.gradle/
+android/app/build/
+
+# Firebase keys (don’t expose them!)
+*.plist
+*.json
