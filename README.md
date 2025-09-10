@@ -63,18 +63,9 @@ To set up Firebase for your own build:
 ## ⚡ Getting Started
 Clone the repo and run locally:
 ```bash
-git clone https://github.com/mrxyz606/night-market.git
-cd night-market
-flutter pub get
-flutter run
+  git clone https://github.com/mrxyz606/night-market.git
+  cd night-market
+  flutter pub get
+  flutter run
 
 ---
-
-### 📜 License
-```markdown
-## 📜 License
-This project is open-source and available under the [MIT License](LICENSE).  
-## ✨ Author
-👩‍💻 Developed by **Malak Mansour**  
-📧 Contact: [mansormalak606@gmail.com](mailto:mansormalak606@gmail.com)  
-🔗 GitHub: [mrxyz606](https://github.com/mrxyz606)  
