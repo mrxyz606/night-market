@@ -22,13 +22,15 @@ Only the **owner** can upload new products, while regular users can view and pur
 
 ### 🔐 Authentication
 ![Login](assets/login.png)
+![Login](assets/Screenshotlogin.png)
 
 ### 🏠 Home / Products
 ![Products](assets/home.png)
+![Login](assets/Screenshot%20order.png)
 
 ### 🛒 orders
 ![Cart](assets/orders.png)
-!![Cart](assets/Screenshot%20orders.png)
+!![Cart](assets/Screenshotcart.png)
 
 
 ### 🔒 Firebase Rules Example
