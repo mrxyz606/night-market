@@ -35,7 +35,7 @@ Only the **owner** can upload new products, while regular users can view and pur
 ---
 
 ## 🎥 Demo Video
-![demo](night market.mp4)
+![demo](nightmarket.mp4)
 
 ---
 
