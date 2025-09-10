@@ -26,7 +26,7 @@ Only the **owner** can upload new products, while regular users can view and pur
 
 ### 🏠 Home / Products
 ![Products](assets/home.png)
-![Login](assets/Screenshot%20order.png)
+![Login](assets/Screenshot%20orders.png)
 
 ### 🛒 orders
 ![Cart](assets/orders.png)
